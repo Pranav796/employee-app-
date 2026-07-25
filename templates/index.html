@@ -1,0 +1,19 @@
+<h1>Employees</h1>
+
+<a href="/add">Add Employee</a>
+
+<table border="1">
+<tr>
+<th>ID</th>
+<th>Name</th>
+<th>Role</th>
+</tr>
+
+{% for emp in employees %}
+<tr>
+<td>{{ emp[0] }}</td>
+<td>{{ emp[1] }}</td>
+<td>{{ emp[2] }}</td>
+</tr>
+{% endfor %}
+</table>
